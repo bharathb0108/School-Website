@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf8210554a.js" crossorigin="anonymous"></script>
+</head> 
+<body> 
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="address.html">Location</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact School</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> school@gmail.com</p>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Contact us for <span>Admission</span></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>

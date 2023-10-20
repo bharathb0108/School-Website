@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>School</title>
+    <style> 
+        #map { 
+          height: 400px; 
+          width: 100%; 
+         } 
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf8210554a.js" crossorigin="anonymous"></script>
+</head> 
+<body> 
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="address.html">Location</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <h3>Address</h3> 
+        <div id="map"></div> 
+         
+        <script async defer src= "https://maps.googleapis.com/maps/api/js?key= AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"> 
+        </script> 
+    <div class="copyright">
+        <p>Contact us for <span>Admission</span></p>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
